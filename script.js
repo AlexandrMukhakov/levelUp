@@ -111,7 +111,8 @@ function closeModal() {
     modal.classList.add('hide');
 }
 
-but.addEventListener("click", () => {
+but.addEventListener("click", (e) => {
+    e.preventDefault();
     openModal();
     form.reset();
 });
