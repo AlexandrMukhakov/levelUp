@@ -153,6 +153,9 @@ body {
 }
 
 
+
+/* указатели состава продукта */
+
 .shape1 {
     height: 68px;
     width: 200px;
@@ -424,27 +427,40 @@ body {
 }
 
 
+/* мигающая надпись */
     @keyframes flicker {
-      from { opacity: 1; /* Непрозрачный текст */ }
-      to { opacity: 0.5; /* Прозрачный текст */ }
+      from { opacity: 1; }
+      to { opacity: 0.5; }
     }
 
-
+/* таймер */
    .timer {
     display: flex;
     justify-content: center;
    } 
 
+   /* адаптация таймера */
+   @media (max-width:828px) {
+    .timer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+   }
+
    .timer__block {
     border: #ccc 2px solid;
-    padding: 20px 20px;
+    width: 100px;
+    height: auto;
     margin-right: 30px;
     background: #fff;
     box-shadow: 0 4px 20px rgb(0 0 0 / 25%);
-    font-size: 16px;
+    font-size: 26px;
     font-weight: 300;
     text-align: center;
    }
+
+
+/* блок цена */
 
 .priceForma {
     display: flex;
@@ -482,6 +498,9 @@ body {
             left: 190px;}
 }
 
+
+/* адаптация всплывающей надписе при наведении на инпут, так же всего блока с ценой*/
+
 @media (max-width: 930px) {
 
     .name:after{
@@ -518,6 +537,8 @@ body {
 }
 }
 
+
+/* адаптация комментариев и блока с доктором */
 @media (max-width: 500px) {
     .container {
         text-align: center;
@@ -567,6 +588,9 @@ body {
 }
 
 
+
+
+/* адаптация header */
 
   @media (max-width: 1340px){
     .nameProd {
@@ -754,6 +778,24 @@ body {
         }
 }
 
+@media (max-width:716px) {
+    .nameProd {
+        position: absolute;
+        top:-435px;
+        left: 60px;
+        }
+        .buttonProd {
+            position: absolute;
+            bottom: 670px;
+            left:190px;
+        }
+
+        .video-media {
+            width: 120%;
+            height: auto;
+        }
+}
+
 @media (max-width:679px) {
     .nameProd {
         position: absolute;
@@ -767,6 +809,26 @@ body {
         }
 }
 
+@media (max-width:665px) {
+    .nameProd {
+        position: absolute;
+        top:-415px;
+        left: 60px;
+        }
+        .buttonProd {
+            position: absolute;
+            bottom: 645px;
+            left:160px;
+        }
+
+        .video-media {
+            width: 120%;
+            height: auto;
+        }
+}
+
+
+
 @media (max-width:614px) {
     .nameProd {
         position: absolute;
@@ -776,7 +838,7 @@ body {
         .buttonProd {
             position: absolute;
             bottom: 620px;
-            left:230px;
+            left:130px;
         }
 }
 
@@ -788,9 +850,9 @@ body {
         left: 50px;
         }
         .buttonProd {
-            bottom: 610px;
-            left:230px;
-            padding: 8px 10px;
+            bottom: 580px;
+            left:130px;
+            padding: 18px 18px;
         }
         .promoImage {
             max-width: 100px;
@@ -798,45 +860,68 @@ body {
         .promoTitle {
             margin-top: -270px;
         }
-        .video-media {
-            width: 130%;
-            height: auto;
-        }
+
+       
 }
 
 
 @media (max-width:537px) {
     .nameProd {
         position: absolute;
-        top:-370px;
+        top:-330px;
         left: 50px;
         }
         .buttonProd {
             position: absolute;
-            bottom: 610px;
-            left:230px;
+            bottom: 560px;
+            left:130px;
         }
 
 }
 
-@media (max-width:480px) {
+
+@media (max-width:500px) {
     .nameProd {
         position: absolute;
-        top:-340px;
+        top:-320px;
         left: 50px;
         }
         .buttonProd {
             position: absolute;
-            bottom: 580px;
-            left:230px;
+            bottom: 550px;
+            left:120px;
         }
+
+}
+
+@media (max-width:476px) {
+    .nameProd {
+        position: absolute;
+        top:-310px;
+        left: 50px;
+        }
+        .buttonProd {
+            position: absolute;
+            bottom: 540px;
+            left:160px;
+        }
+.containerWithOutPromo {
+   margin-left: 100px;
+   margin-right: auto;
+   margin-top: -190px;
+}
+.char ol {
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 25px;
+}
 }
 
 
 
 
 
-
+/* адаптация блока с сотавом */
 
 
 @media (max-width:900px){
