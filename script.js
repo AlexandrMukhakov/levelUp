@@ -69,6 +69,9 @@ window.addEventListener("DOMContentLoaded", () => {
 
 
     slideFild.style.width = 100 * slides.length + '%';
+    slides.forEach(item => {
+        item.style.width = width;
+    });
 
     nextArrow.addEventListener("click", () => {
 

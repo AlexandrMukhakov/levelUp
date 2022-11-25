@@ -1276,6 +1276,49 @@ body {
 }
 
 
+@media (max-width: 420px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .name:after{
+        position: absolute;
+        top: 15px;
+        left: 200px;}
+        .tell:after{
+            position: absolute;
+            top: 5px;
+            left: 200px;}
+
+    .offer_slider-wrapper {
+        width: 350px;
+    }
+    .slider {
+        margin-left: -27px;
+        margin-right: 0;
+    }
+    .char {
+        padding-right: 20px;
+    }
+    .order {
+        margin: auto;
+    }
+    .nameProd {
+        position: absolute;
+        top:-270px;
+        left: 20px;
+        font-size: 40px;
+        }
+        .buttonProd {
+            position: absolute;
+            bottom: 510px;
+            left:170px;
+        }
+        .list ol {
+        font-size: 30px;
+    }
+}
+ 
 
 @media screen and (max-width: 1200px) {
     body {
